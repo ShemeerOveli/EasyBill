@@ -1,0 +1,47 @@
+﻿1. ProductTable
+pk_intProductID
+vaProductCode
+vaBarcode
+vaProductName
+vaUnit
+mnPurchasePrice
+mnMRP
+mnWholesalePrice
+vaSupplier
+dcVAT
+dcCESS
+
+2. StockTable
+pk_intStockID
+intProductID
+dcQuantity
+mnPurchasePrice
+mnMRP
+mnWholesalePrice
+
+
+
+
+3. PurchaseTable
+pk_intPurchaseID
+dtPurchaseDate
+vaInvoiceNo
+vaSupplierName
+mnTotalAmount
+
+4.PurchaseSubTable
+pk_intPurchaseSubID
+intPurchaseID
+intProductID
+intQuantity
+mnMRP
+
+5. StockTable
+pk_intStockID
+intProductID
+mnPurchaseRate
+mnMRP
+intQuantity
+vaStatus
+
+
